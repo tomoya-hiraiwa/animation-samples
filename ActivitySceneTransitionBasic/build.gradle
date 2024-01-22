@@ -15,6 +15,9 @@
  */
 
 buildscript {
+    ext {
+        kotlin_version = '2.0.0-Beta3'
+    }
     repositories {
         google()
         mavenCentral()
@@ -22,6 +25,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
